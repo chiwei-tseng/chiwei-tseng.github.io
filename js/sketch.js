@@ -475,8 +475,8 @@ class Smile{
   constructor() {
 
     this.x = random(width);
-    this.y = random(200,1000);
-    this.diameter = random(width/12, width/5);
+    this.y = random(height);
+    this.diameter = random(width/12, width/8);
 
   }
 
