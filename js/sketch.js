@@ -252,7 +252,7 @@ function draw() {
     //finish.play();
 
     //end
-    fill(bgColor);
+    fill(0);
     textAlign(CENTER, CENTER);
     textSize(200);
     text(end, width/2, height/7);
