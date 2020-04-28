@@ -258,7 +258,7 @@ function draw() {
     fill(bgColor);
     textAlign(CENTER, CENTER);
     textSize(200);
-    text(end, width/2, height/2);
+    text(end, width/2, height/3);
 
 
 
