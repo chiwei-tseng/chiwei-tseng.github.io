@@ -1,6 +1,6 @@
 let title = "LET'S BEAT THE VIRUS!";
 let rules = "1. Drag the virus in the washing machine.  2. Choose your method.  3. Turn ON.  4.And turn OFF.";
-let end = "THANK YOU!"
+let end = "THANK YOU!";
 
 let wx, wy, ww, wh, cx, cy,cr;
 
@@ -13,8 +13,6 @@ let method;
 let mw, mh, mc;
 let m1x, m1y, m2x, m2y, m3x, m3y, m4x, m4y, m5x, m5y, m6x, m6y;
 let onx, ony, offx, offy, bw, bh;
-
-let m1 = false;
 
 let virusImg;
 let virusSize;
