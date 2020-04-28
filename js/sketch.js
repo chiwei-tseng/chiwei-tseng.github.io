@@ -244,11 +244,6 @@ function draw() {
     isOn = false;
     background(255);
 	  
-    //end
-    fill(bgColor);
-    textAlign(CENTER, CENTER);
-    textSize(200);
-    text(end, width/2, height/7);
 
     for (let i = 0; i < smile.length; i++) {
     smile[i].draw();
@@ -259,6 +254,11 @@ function draw() {
 
   }
 
+    //end
+    fill(bgColor);
+    textAlign(CENTER, CENTER);
+    textSize(200);
+    text(end, width/2, height/7);
 
 
 
