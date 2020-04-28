@@ -249,7 +249,7 @@ function draw() {
   }
 
     spin.stop();
-    finish.play();
+    //finish.play();
 
     //end
     fill(bgColor);
