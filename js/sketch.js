@@ -456,30 +456,7 @@ class Method{
 
 class Virus{
   constructor() {
-    //this.x = random(150, width-150);
-    //this.y = random(150, height-150);
-/*
-    v1x = 100;
-    v1y = 200;
-    v2x = 200;
-    v2y = 400;
-    v3x = 400;
-    v3y = 500;
-    v4x = 280;
-    v4y = 680;
-    v5x = 600;
-    v5y = 50;
-    v6x = 750;
-    v6y = 100;
-    v7x = 800;
-    v7y = 750;
-    v8x = 1000;
-    v8y = 200;
-    v9x = 1100;
-    v9y = 640;
-    v10x = 950;
-    v10y = 450;
-*/
+    
   }
 
   draw() {
@@ -490,103 +467,6 @@ class Virus{
         image(virusImg, vr.x, vr.y, virusSize, virusSize);
       }
     }
-
-/*
-    image(virusImg, v1x, v1y, virusSize, virusSize);
-    image(virusImg, v2x, v2y, virusSize, virusSize);
-    image(virusImg, v3x, v3y, virusSize, virusSize);
-    image(virusImg, v4x, v4y, virusSize, virusSize);
-    image(virusImg, v5x, v5y, virusSize, virusSize);
-    image(virusImg, v6x, v6y, virusSize, virusSize);
-    image(virusImg, v7x, v7y, virusSize, virusSize);
-    image(virusImg, v8x, v8y, virusSize, virusSize);
-    image(virusImg, v9x, v9y, virusSize, virusSize);
-    image(virusImg, v10x, v10y, virusSize, virusSize);
-*/
-  /* if (dragging) {
-      v1x = mouseX + offsetX;
-      v1y = mouseY + offsetY;
-      v2x = mouseX + offsetX;
-      v2y = mouseY + offsetY;
-      v3x = mouseX + offsetX;
-      v3y = mouseY + offsetY;
-      v4x = mouseX + offsetX;
-      v4y = mouseY + offsetY;
-      v5x = mouseX + offsetX;
-      v5y = mouseY + offsetY;
-      v6x = mouseX + offsetX;
-      v6y = mouseY + offsetY;
-      v7x = mouseX + offsetX;
-      v7y = mouseY + offsetY;
-      v8x = mouseX + offsetX;
-      v8y = mouseY + offsetY;
-      v9x = mouseX + offsetX;
-      v9y = mouseY + offsetY;
-      v10x = mouseX + offsetX;
-      v10y = mouseY + offsetY;
-    } */
-
-/*
-    if (dist(v1x, v1y, mouseX, mouseY) < virusSize ) {
-      cursor(HAND);
-    } else {
-      cursor(ARROW);
-    }
-
-    if (dist(v2x, v2y, mouseX, mouseY) < 100 ) {
-      cursor(HAND);
-    } else {
-      cursor(ARROW);
-    }
-
-    if (dist(v3x, v3y, mouseX, mouseY) < virusSize ) {
-      cursor(HAND);
-    } else {
-      cursor(ARROW);
-    }
-
-    if (dist(v4x, v4y, mouseX, mouseY) < virusSize ) {
-      cursor(HAND);
-    } else {
-      cursor(ARROW);
-    }
-
-    if (dist(v5x, v5y, mouseX, mouseY) < virusSize ) {
-      cursor(HAND);
-    } else {
-      cursor(ARROW);
-    }
-
-    if (dist(v6x, v6y, mouseX, mouseY) < virusSize ) {
-      cursor(HAND);
-    } else {
-      cursor(ARROW);
-    }
-
-    if (dist(v7x, v7y, mouseX, mouseY) < virusSize ) {
-      cursor(HAND);
-    } else {
-      cursor(ARROW);
-    }
-
-    if (dist(v8x, v8y, mouseX, mouseY) < virusSize ) {
-      cursor(HAND);
-    } else {
-      cursor(ARROW);
-    }
-
-    if (dist(v9x, v9y, mouseX, mouseY) < virusSize ) {
-      cursor(HAND);
-    } else {
-      cursor(ARROW);
-    }
-
-    if (dist(v10x, v10y, mouseX, mouseY) < virusSize ) {
-      cursor(HAND);
-    } else {
-      cursor(ARROW);
-    }
-*/
 }
 
 }
@@ -595,7 +475,7 @@ class Smile{
   constructor() {
 
     this.x = random(width);
-    this.y = random(200,height);
+    this.y = random(200,1000);
     this.diameter = random(width/12, width/5);
 
   }
@@ -679,121 +559,3 @@ function mouseDragged() {
   return false;
 }
 
-/*
-function mousePressed() {
- v1x = mouseX;
- v1y = mouseY;
- v2x = mouseX;
- v2y = mouseY;
- v3x = mouseX;
- v3y = mouseY;
- v4x = mouseX;
- v4y = mouseY;
- v5x = mouseX;
- v5y = mouseY;
- v6x = mouseX;
- v6y = mouseY;
- v7x = mouseX;
- v7y = mouseY;
- v8x = mouseX;
- v8y = mouseY;
- v9x = mouseX;
- v9y = mouseY;
- v9x = mouseX;
- v9y = mouseY;
-}
-*/
-/*
-function mouseDragged() {
-
-var diff = v1x - mouseX;
-v1x = v1x - diff;
-v1x = mouseX;
-var diff = v1y - mouseY;
-v1y = v1y - diff;
-v1y = mouseY;
-
-var diff = v2x - mouseX;
-v2x = v2x - diff;
-v2x = mouseX;
-var diff = v2y- mouseY;
-v2y = v2y - diff;
-v2y = mouseY;
-
-var diff = v3x - mouseX;
-v3x = v3x - diff;
-v3x = mouseX;
-var diff = v3y- mouseY;
-v3y = v3y - diff;
-v3y = mouseY;
-
-var diff = v4x - mouseX;
-v4x = v4x - diff;
-v4x = mouseX;
-var diff = v4y - mouseY;
-v4y = v4y - diff;
-v4y = mouseY;
-
-var diff = v5x - mouseX;
-v5x = v5x - diff;
-v5x = mouseX;
-var diff = v5y- mouseY;
-v5y = v5y - diff;
-v5y = mouseY;
-
-var diff = v6x - mouseX;
-v6x = v6x - diff;
-v6x = mouseX;
-var diff = v6y- mouseY;
-v6y = v6y - diff;
-v6y = mouseY;
-
-var diff = v7x - mouseX;
-v7x = v7x - diff;
-v7x = mouseX;
-var diff = v7y - mouseY;
-v7y = v7y - diff;
-v7y = mouseY;
-
-var diff = v8x - mouseX;
-v8x = v8x - diff;
-v8x = mouseX;
-var diff = v8y- mouseY;
-v8y = v8y - diff;
-v8y = mouseY;
-
-var diff = v9x - mouseX;
-v9x = v9x - diff;
-v9x = mouseX;
-var diff = v9y- mouseY;
-v9y = v9y - diff;
-v9y = mouseY;
-
-var diff = v10x - mouseX;
-v10x = v10x - diff;
-v10x = mouseX;
-var diff = v10y- mouseY;
-v10y = v10y - diff;
-v10y = mouseY;
-
-
-}
-*/
-/*
-function mousePressed() {
-  // Did I click on the rectangle?
-  if (mouseX > v1x && mouseX < v1x + virusSize && mouseY > v1y && mouseY < v1y + virusSize) {
-    dragging = true;
-    // If so, keep track of relative location of click to corner of rectangle
-    offsetX = v1x-mouseX;
-    offsetY = v1y-mouseY;
-  }
-
-}
-
-function mouseReleased() {
-  // Quit dragging
-  dragging = false;
-}
-
-*/
