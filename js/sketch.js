@@ -243,6 +243,12 @@ function draw() {
   if(isOff){
     isOn = false;
     background(255);
+	  
+    //end
+    fill(bgColor);
+    textAlign(CENTER, CENTER);
+    textSize(200);
+    text(end, width/2, height/7);
 
     for (let i = 0; i < smile.length; i++) {
     smile[i].draw();
@@ -250,14 +256,6 @@ function draw() {
 
     spin.stop();
     //finish.play();
-
-    //end
-    fill(0);
-    textAlign(CENTER, CENTER);
-    textSize(200);
-    text(end, width/2, height/7);
-
-
 
   }
 
